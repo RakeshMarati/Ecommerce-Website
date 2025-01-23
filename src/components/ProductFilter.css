@@ -1,0 +1,25 @@
+.product-filter {
+    width: 20%;
+    padding: 20px;
+    background-color: #f8f8f8;
+  }
+  
+  .product-filter h4 {
+    margin-bottom: 20px;
+  }
+  
+  .product-filter h5 {
+    margin-top: 20px;
+  }
+  
+  .product-filter label {
+    display: block;
+    margin-bottom: 10px;
+  }
+  
+  .product-filter select {
+    width: 100%;
+    padding: 5px;
+    margin-bottom: 10px;
+  }
+  

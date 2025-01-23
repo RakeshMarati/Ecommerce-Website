@@ -1,16 +1,17 @@
 import React from 'react';
 import './ProductCard.css';
 
-const ProductCard = ({ product }) => {
+function ProductCard({ product }) {
   return (
     <div className="product-card">
-      <img src={product.image} alt={product.title} className="product-image" />
-      <div className="product-details">
-        <h3>{product.title}</h3>
-        <p>${product.price.toFixed(2)}</p>
-      </div>
+      {product.rating && product.rating.count === 0 && (
+        <div className="out-of-stock">Out of Stock</div>
+      )}
+      <img src={product.image} alt={product.title} />
+      <h4>{product.title}</h4>
+      <p>${product.price}</p>
     </div>
   );
-};
+}
 
 export default ProductCard;
